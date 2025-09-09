@@ -3,9 +3,9 @@
 ## Team Info
 **Team Name:** Your Team Name Here  
 **Team Members:**  
-  - Member 1 – [Kellia Kamikazi](https://github.com/Kellia855)  
-  - Member 2 – [Tumugane Rolande](https://github.com/TRolande)  
-  - Member 3 – [Aurore Umumararungu](https://github.com/Aurores-U)  
+  - Member 1 :Kellia Kamikazi.(https://github.com/Kellia855)  
+  - Member 2 :Tumugane Rolande.(https://github.com/TRolande)  
+  - Member 3 :Aurore Umumararungu.(https://github.com/Aurores-U)  
   
 ---
 
@@ -36,7 +36,7 @@ It includes:
 │   ├── db.sqlite3
 │   └── logs/
 │       ├── etl.log
-│       └── dead_letter/
+│       └── dead_letter/                                                                                
 ├── etl/
 │   ├── __init__.py
 │   ├── config.py
