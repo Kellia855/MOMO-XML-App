@@ -1,0 +1,53 @@
+{
+  "transaction": {
+    "transaction_id": 5001,
+    "amount": 1250.0,
+    "currency": "RWF",
+    "transaction_date": "2025-09-18T18:30:00Z",
+    "status": "completed",
+    "category": {
+      "category_id": 2,
+      "category_name": "Bill Payment",
+      "description": "Utility payment"
+    },
+    "sender": {
+      "user_id": 201,
+      "first_name": "Alice",
+      "last_name": "Uwase",
+      "phone_number": "+250788111111",
+      "email": "alice@example.rw",
+      "user_type": "customer"
+    },
+    "receiver": {
+      "user_id": 202,
+      "first_name": "Bob",
+      "last_name": "Habineza",
+      "phone_number": "+250788222222",
+      "email": "bob@example.rw",
+      "user_type": "merchant"
+    },
+    "metadata": {
+      "provider": "MTN_MoMo",
+      "original_xml_snippet": "<Transaction><Amount>1250</Amount>...</Transaction>",
+      "processing_notes": [
+        "validated_sender",
+        "validated_receiver",
+        "category_assigned"
+      ]
+    },
+    "logs": [
+      {
+        "log_id": 4001,
+        "log_type": "info",
+        "created_at": "2025-09-18T18:30:02Z",
+        "message": "Transaction ingested"
+      },
+      {
+        "log_id": 4002,
+        "log_type": "audit",
+        "created_at": "2025-09-18T18:30:03Z",
+        "message": "Transaction stored in database"
+      }
+    ]
+  }
+}

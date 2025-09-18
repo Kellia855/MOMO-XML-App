@@ -1,0 +1,38 @@
+{
+  "User": {
+    "user_id": "INT",
+    "first_name": "VARCHAR",
+    "last_name": "VARCHAR",
+    "phone_number": "VARCHAR",
+    "email": "VARCHAR",
+    "user_type": "ENUM(customer, merchant, agent)"
+  },
+  "Transaction_Category": {
+    "category_id": "INT",
+    "category_name": "VARCHAR",
+    "description": "TEXT"
+  },
+  "Transaction": {
+    "transaction_id": "INT",
+    "sender_id": "INT (FK->User)",
+    "receiver_id": "INT (FK->User)",
+    "category_id": "INT (FK->Transaction_Category)",
+    "amount": "DECIMAL(12,2)",
+    "currency": "VARCHAR",
+    "transaction_date": "DATETIME",
+    "status": "ENUM(pending, completed, failed)",
+    "metadata": "JSON"
+  },
+  "System_Log": {
+    "log_id": "INT",
+    "transaction_id": "INT (FK->Transaction)",
+    "log_type": "VARCHAR",
+    "created_at": "DATETIME",
+    "message": "TEXT"
+  },
+  "User_Transaction_Junction": {
+    "user_id": "INT (FK->User)",
+    "transaction_id": "INT (FK->Transaction)",
+    "role": "VARCHAR"
+  }
+}

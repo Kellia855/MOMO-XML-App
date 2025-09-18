@@ -1,0 +1,52 @@
+[
+  {
+    "transaction_id": 6001,
+    "sender_id": 201,
+    "receiver_id": 202,
+    "category_id": 1,
+    "amount": 500.0,
+    "currency": "RWF",
+    "transaction_date": "2025-09-10T10:00:00Z",
+    "status": "completed"
+  },
+  {
+    "transaction_id": 6002,
+    "sender_id": 203,
+    "receiver_id": 204,
+    "category_id": 3,
+    "amount": 1200.0,
+    "currency": "RWF",
+    "transaction_date": "2025-09-11T11:00:00Z",
+    "status": "pending"
+  },
+  {
+    "transaction_id": 6003,
+    "sender_id": 204,
+    "receiver_id": 205,
+    "category_id": 4,
+    "amount": 3400.0,
+    "currency": "RWF",
+    "transaction_date": "2025-09-12T09:00:00Z",
+    "status": "failed"
+  },
+  {
+    "transaction_id": 6004,
+    "sender_id": 201,
+    "receiver_id": 205,
+    "category_id": 2,
+    "amount": 800.0,
+    "currency": "RWF",
+    "transaction_date": "2025-09-13T12:00:00Z",
+    "status": "completed"
+  },
+  {
+    "transaction_id": 6005,
+    "sender_id": 202,
+    "receiver_id": 203,
+    "category_id": 5,
+    "amount": 10000.0,
+    "currency": "RWF",
+    "transaction_date": "2025-09-14T16:00:00Z",
+    "status": "completed"
+  }
+]

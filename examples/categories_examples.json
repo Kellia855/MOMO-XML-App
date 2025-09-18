@@ -1,0 +1,28 @@
+[
+  {
+    "category_id": 1,
+    "category_name": "Airtime Purchase",
+    "description": "Buy airtime"
+  },
+  {
+    "category_id": 2,
+    "category_name": "Bill Payment",
+    "description": "Utility payment"
+  },
+  {
+    "category_id": 3,
+    "category_name": "P2P Transfer",
+    "description": "Peer-to-peer transfer"
+  },
+  {
+    "category_id": 4,
+    "category_name": "Merchant Payment",
+    "description": "Payment to merchant"
+  },
+  {
+    "category_id": 5,
+    "category_name": "Cash-Out",
+    "description": "Withdraw cash from agent"
+  }
+]
+
