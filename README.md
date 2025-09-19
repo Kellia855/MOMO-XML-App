@@ -20,81 +20,41 @@ It includes:
 
 ## Project Structure
 
-├── README.md
 
-├── .env.example
+MOMO-XML-App/
+│
+├── data/ 
+│ ├── raw/ 
+│ └── processed/ 
+│
+├── database/ # 
+│ └── database_setup.sql
+│
+├── docs/ 
+│ └── erd_diagram.png
+  |__ database_design_document.pdf
+│
+├── examples/ 
+│ └── json_schemas.json
+│
+├── scripts/ 
+│ ├── extract.py
+│ ├── transform.py
+│ ├── load.py
+│ └── utils.py
+│
+├── tests/ 
+│ └── test_etl.py
+│
+├── web/ 
+│ ├── index.html
+│ ├── style.css
+│ └── app.js
+│
+├── .gitignore 
+├── README.md 
+└── requirements.txt 
 
-├── requirements.txt
-
-├── index.html
-
-├── web/
-
-│   ├── styles.css
-
-│   ├── chart_handler.js
-
-│   └── assets/
-
-├── data/
-
-│   ├── raw/
-
-│   │   └── momo.xml
-
-│   ├── processed/
-
-│   │   └── dashboard.json
-
-│   ├── db.sqlite3
-
-│   └── logs/
-
-│       ├── etl.log
-
-│       └── dead_letter/  
-
-├── etl/
-
-│   ├── __init__.py
-
-│   ├── config.py
-
-│   ├── parse_xml.py
-
-│   ├── clean_normalize.py
-
-│   ├── categorize.py
-
-│   ├── load_db.py
-
-│   └── run.py
-
-├── api/
-
-│   ├── __init__.py
-
-│   ├── app.py
-
-│   ├── db.py
-
-│   └── schemas.py
-
-├── scripts/
-
-│   ├── run_etl.sh
-
-│   ├── export_json.sh
-
-│   └── serve_frontend.sh
-
-└── tests/
-    ├── test_parse_xml.py
-    
-    ├── test_clean_normalize.py
-    
-    └── test_categorize.py
-    
 
 ---
 
