@@ -68,3 +68,10 @@ MOMO-XML-App/
 We are using Trello to manage tasks with Scrum methodology.  
 
  **Trello Board Link:** [MOMO-XML Project - scrum board](https://trello.com/b/p4gLWs1S/momo-sms-project-scrum-board)
+
+___
+
+## Database Design
+The MoMo SMS data processing system database is designed to efficiently handle transactions, users, categories, and system logs while ensuring scalability and data integrity.  
+- Full ERD, documentation, and rationale are available in [docs/database_design_document.pdf](./docs/database_design_document.pdf).
+
