@@ -22,39 +22,31 @@ It includes:
 
 
 MOMO-XML-App/
-│
-├── data/ 
-│ ├── raw/ 
-│ └── processed/ 
-│
-├── database/ # 
-│ └── database_setup.sql
-│
-├── docs/ 
-│ └── erd_diagram.png
-  |__ database_design_document.pdf
-│
-├── examples/ 
-│ └── json_schemas.json
-│
-├── scripts/ 
-│ ├── extract.py
-│ ├── transform.py
-│ ├── load.py
-│ └── utils.py
-│
-├── tests/ 
-│ └── test_etl.py
-│
-├── web/ 
-│ ├── index.html
-│ ├── style.css
-│ └── app.js
-│
-├── .gitignore 
-├── README.md 
-└── requirements.txt 
-
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── database/
+│       ├── #
+│       └── database_setup.sql
+├── docs/
+│   ├── erd_diagram.png
+│   └── database_design_document.pdf
+├── examples/
+│   └── json_schemas.json
+├── scripts/
+│   ├── extract.py
+│   ├── transform.py
+│   └── load.py
+├── utils/
+├── tests/
+│   └── test_etl.py
+├── web/
+│   ├── index.html
+│   ├── style.css
+│   └── app.js
+├── .gitignore
+├── README.md
+└── requirements.txt
 
 ---
 
