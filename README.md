@@ -20,7 +20,7 @@ It includes:
 
 ## Project Structure
 
-
+```
 MOMO-XML-App/
 ├── data/
 │   ├── raw/
@@ -66,4 +66,4 @@ ___
 ## Database Design
 The MoMo SMS data processing system database is designed to efficiently handle transactions, users, categories, and system logs while ensuring scalability and data integrity.  
 - Full ERD, documentation, and rationale are available in [docs/database_design_document.pdf](./docs/database_design_document.pdf).
-
+```
