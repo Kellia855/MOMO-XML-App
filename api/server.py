@@ -17,7 +17,7 @@ import base64
 
 # Configuration
 REPO_ROOT = os.path.dirname(os.path.dirname(__file__))  # api/ -> repo root
-DATA_FILE = os.path.join(REPO_ROOT, "data", "processed", "transactions.json")
+DATA_FILE = os.path.join(REPO_ROOT, "data", "processed", "sms_records.json")
 LOCK = threading.Lock()
 PORT = 8000
 
