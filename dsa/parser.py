@@ -11,8 +11,9 @@ def parse_sms_xml():
 
     sms_list = []
 
-    for sms in root.findall(".//sms"):
+    for i, sms in enumerate(root.findall(".//sms"), start=1):
         record = {
+            "id":i,
             "address": sms.get("address"),
             "date": sms.get("date"),
             "type": sms.get("type"),
