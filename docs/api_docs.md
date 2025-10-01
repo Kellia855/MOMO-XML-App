@@ -343,7 +343,7 @@ python3 api/server.py
 The server will start on http://localhost:8000
 
 ### Project Structure
-
+```
 MOMO-XML-App/
 ├── api/
 │   └── server.py          # Main API server
@@ -352,3 +352,4 @@ MOMO-XML-App/
 │       └── sms_records.json  # Data storage
 └── docs/
     └── api_documentation.md  # This documentation
+```
