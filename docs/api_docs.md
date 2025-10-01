@@ -346,10 +346,10 @@ The server will start on http://localhost:8000
 ```
 MOMO-XML-App/
 ├── api/
-│   └── server.py          # Main API server
+│   └── server.py          
 ├── data/
 │   └── processed/
-│       └── sms_records.json  # Data storage
+│       └── sms_records.json  
 └── docs/
-    └── api_documentation.md  # This documentation
+    └── api_docs.md  # This documentation
 ```
