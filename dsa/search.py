@@ -13,25 +13,29 @@ def load_sms():
 
 # Build dictionary for O(1) lookup
 def build_dict(sms_list):
-    return {sms["transaction_id"]: sms for sms in sms_list if sms["transaction_id"]}
+    return {sms["id"]: sms for sms in sms_list if sms.get("id") is not None}
 
 # Linear Search
-def linear_search(sms_list, transaction_id):
+def linear_search(sms_list, target_id):
     for sms in sms_list:
-        if sms["transaction_id"] == transaction_id:
+        if sms.get("id") == target_id:
             return sms
     return None
 
 # Dictionary Lookup
-def dict_lookup(sms_dict, transaction_id):
-    return sms_dict.get(transaction_id, None)
+def dict_lookup(sms_dict, target_id):
+    return sms_dict.get(target_id, None)
 
 def main():
     sms_list = load_sms()
     sms_dict = build_dict(sms_list)
 
     # Use first 20 records for testing
-    test_ids = [sms["transaction_id"] for sms in sms_list[:20] if sms["transaction_id"]]
+    test_ids = [sms["id"] for sms in sms_list[:20] if sms.get("id")]
+
+    if not test_ids:
+        print("No valid IDs found to test.")
+        return
 
     linear_times = []
     dict_times = []
